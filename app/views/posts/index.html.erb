@@ -1,52 +1,53 @@
 
 <html>
 
-<body>
-  <!-- Adding navbar here -->
+<body id="post-background">
+  
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Navbar added here by Layouts file -->
+
+    <!-- Now adding Welcome page -->
+
+  <header>
+   
+   <p id="notice"><%= notice %></p>
     <div class="container">
-    
-  <a class="navbar-brand" href="#">Roadster</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
-      </li>
+      <div class="jumbotron">
+
+        <div class="content">
+
+          <h1 class="welcome-style">Welcome to Roadster</h1>
+
+          <h3>Start your journey </h3>
+
+          <% if user_signed_in? %>
+         <button class="btn btn-default"> <%= link_to 'Create Your Journey', new_post_path, class: "post-link-style" %></button>
+          <% else %>
+          <button class="btn btn-default"> <%= link_to "Sign in to create post", new_user_session_path, class: "post-link-style"%></button>
+          <% end %> 
+        </div>
+
+        
+
+      </div>
       
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
-      </li>
-    </ul>
+
+    </div>
+  </header>
 
 
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#"><i class="fas fa-keyboard"></i>Sign-in</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Sign-up</a>
-      </li>
-      
-    </ul>
-    
-  </div>
-</div>
+    <!-- Add new page that contains posts -->
 
 
-</nav>
 
+
+  <main>
   <div class="container">
-    <p id="notice"><%= notice %></p>
+    <div class="post-content">
+   
 
-    <%= link_to 'New Post', new_post_path %>
+    
     <div class="row">
       <div class="col-lg-12">
         <h1>Posts</h1>
@@ -55,6 +56,13 @@
               <div class="row ">
 
                 <%= post.title %>
+                <%= link_to 'Show', post, class: 'edit-link'  %>
+                <% if user_signed_in? %>
+                <% if current_user.id == post.user_id %>
+                <%= link_to 'Edit', edit_post_path(post),class: 'edit-link' %>
+                <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' },class: 'edit-link' %>
+                <% end %>
+                <% end %>
               </div>
                 
             <% end %>
@@ -67,9 +75,10 @@
     </div>
 
   </div>
+</div>
 
   </div>
 
-
+</main>
 </body>
 </html>

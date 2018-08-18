@@ -1,2 +1,47 @@
   @import "bootstrap";
 
+  
+  		header{
+  			height:100vh;
+  			background: url("https://images.unsplash.com/photo-1534543422-0169c08bf67c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=52f67c480f3f78dbd94e186857a60b1a&auto=format&fit=crop&w=700&q=80");
+  			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+  		}
+
+
+	  .content{
+
+	  color: white;
+	  text-align: center;
+	  padding-top: 10%;
+	  font-family: 'Gloria Hallelujah', cursive;
+	  text-shadow: 4px 4px 26px rgba(146, 150, 150, 0.77);
+	  }
+	  .post-link-style{
+
+	  color: grey;
+	  }
+	   .post-link-style:hover{
+
+	  color: grey;
+	  }
+
+	  .post-content{
+	  	color: black;
+	  }
+	  #notice{
+	  	color: white;
+	    text-align: center;
+    	font-family: 'Gloria Hallelujah', cursive;
+    	text-shadow: 4px 4px 26px rgba(146, 150, 150, 0.77);
+	  }
+	  .welcome-style{
+	  font-weight: 700;
+	  font-size: 3em;
+	  }
+	  main{
+	  height: 100vh;
+	  }
+
+

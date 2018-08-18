@@ -52,10 +52,15 @@
 	}
 	a:hover{
 	text-decoration: none !important;
+	color: white;
 	}
-	a{
-	color: grey !important;
+	.link-style{
+	color: grey;
 	}
+	.link-style:hover{
+	color: grey;
+	}
+	
 
 
 
