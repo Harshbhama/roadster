@@ -1,0 +1,63 @@
+ @import "bootstrap";
+
+ html{
+ height: 100%;
+ }
+
+#home-body{
+	
+	background: url("https://images.unsplash.com/photo-1530721733923-e2df89901503?ixlib=rb-0.3.5&s=2d90412ebc565e3716cc20e0e493f119&auto=format&fit=crop&w=634&q=80");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	}
+
+
+
+	.jumbotron {
+
+		background: none !important;
+
+	}
+	
+	.title-string{
+
+	padding-top: 10px;
+	}
+
+	#content{
+	color: white;
+	padding-top: 14%;
+	text-align: center;
+	font-family: 'Gloria Hallelujah', cursive;
+	text-shadow: 4px 4px 26px rgba(146, 150, 150, 0.77);
+
+
+	}
+	h3{
+	  padding-bottom: 5px;
+	}
+
+	#size-road{
+	font-weigth: 700;
+	font-size: 5em;
+	}
+
+	.fa-keyboard:before {
+	content: "\f11c";
+	padding-right: 10px;
+	}
+	.link-style:hover{
+	text-decoration: none;
+	}
+	a:hover{
+	text-decoration: none !important;
+	}
+	a{
+	color: grey !important;
+	}
+
+
+
+ 
+
