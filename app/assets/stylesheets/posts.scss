@@ -7,6 +7,7 @@
   			background-size: cover;
 			background-position: center;
 			background-repeat: no-repeat;
+			padding-top: 1px;
   		}
 
 
@@ -114,6 +115,16 @@
 	  color: grey;
 
 	  }
+	  .show-title-style{
+	  font-family: 'Dancing Script', cursive;
+	  font-size: 40px;
+	  text-align: center;
+	  }
+	  .show-content-style{
+	  font-family: 'Dancing Script', cursive;
+	  font-size: 20px;
+	  text-align: center;
+	  }
 
 
 
@@ -122,9 +133,37 @@
 
 
 
+
+
+
+	  
+
+	  
+	  #show-body{
+
+	  background: url("https://images.unsplash.com/photo-1523872135651-514afbd57180?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2c58d885254aa2991a2f14d3c06a5d40&auto=format&fit=crop&w=946&q=80");
+	  background-size: cover;
+	  background-position: center;
+	  height: 100%;
+
+	  }
+
+
+
+	  #new-body{
+	  background: url("https://images.unsplash.com/photo-1523958940417-b5818e64cf16?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=890168d2efdcae79035eba9e5e63a045&auto=format&fit=crop&w=1018&q=80");
+	  background-size: cover;
+	  background-position: center;
+	  height: 100%;
+
+	  }
 
 	  main{
-	  height: 100vh;
+	  height: 100%;
+	  background: url("https://images.unsplash.com/photo-1509624776920-0fac24a9dfda?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=42ec196ddd2f51e9dbb7bfe0adcbaa3b&auto=format&fit=crop&w=1050&q=80");
+	  background-size: cover;
+	  background-position: center;
+	  
 	  }
 	 
 

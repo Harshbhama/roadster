@@ -1,13 +1,25 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <%= @post.title %>
-</p>
+<html>
+	<body id="show-body">
+		<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Content:</strong>
-  <%= @post.content %>
-</p>
+		<div class="container">
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+		  <div class="show-title-style">
+
+		  	<%= @post.title%>
+		  </div>
+
+		  <div class="show-content-style">
+		  	
+
+		  	<%= @post.content %>
+		  </div>
+
+		</div>
+
+
+		<%= link_to 'Edit', edit_post_path(@post) %> |
+		<%= link_to 'Back', posts_path %>
+	</body>
+</html>
