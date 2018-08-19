@@ -1,5 +1,33 @@
-<h1>New Post</h1>
 
-<%= render 'form', post: @post %>
+<html>
 
-<%= link_to 'Back', posts_path %>
+	<body>
+
+		<div class="container">
+
+			<h1 class="h-new-style">New Post</h1>
+
+		<%=form_for @post, html: { multipart: true } do |f| %>
+			
+			<div class="form-group">
+			 	<%= f.label :title, class: "t-label-style"  %>
+				<%= f.text_area :title, class: "form-control t-area-style" %>
+				<br>
+				<%= f.label :content, class: "c-label-style"%>
+				<%= f.text_area :content, class: "form-control c-area-style" %>
+			 	<br>
+			 	
+			 	<p class="p-new-style">Choose Cover Image</p>
+				<%= f.file_field :avatar, class: "form-control i-area-style", placeholder: "Enter email" %>
+				<br>
+				
+			 	<%= f.submit 'Submit', class: "btn btn-default sbt-new-style" %>
+			 	
+				<% end %>
+			</div>
+
+		<%= link_to 'Back', posts_path %>
+		</div>
+	</body>
+
+</html>

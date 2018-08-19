@@ -27,8 +27,13 @@
 	  color: grey;
 	  }
 
+	  .h-post-style{
+	  font-family: 'Merienda', cursive;
+	  }
+
 	  .post-content{
 	  	color: black;
+	  	
 	  }
 	  #notice{
 	  	color: white;
@@ -40,8 +45,87 @@
 	  font-weight: 700;
 	  font-size: 3em;
 	  }
+
+	  .image-style{
+
+		width: 350px;
+	    height: 250px;
+	    border-radius: 19px;
+	   }
+
+	  .disp-style{
+	    display: flex;
+    	flex-direction: column;
+	  }
+	  .show-link{
+
+	  	text-align: center;
+	  }
+	  .paragh-style{
+	  	text-align: center;
+	    padding-top: 10px;
+	  }
+	  .post-heading-style{
+	  padding-left: 41%;
+	  }
+	  .edit-link:hover{
+	  color: grey;
+	  }
+	  .edit-link{
+	  color: grey;
+	  }
+	  .t-area-style
+	  {
+	      width: 36%;
+
+	  }
+	  .c-area-style{
+	  	    height: 144px !important;
+   			width: 50%;
+	  }
+	  .i-area-style
+	  {
+	      width: 36%;
+	  }
+	  .t-label-style{
+	  font-family: 'Dancing Script', cursive ;
+	  font-size: 25px;
+	  }
+	  .c-label-style{
+	  font-family: 'Dancing Script', cursive;
+	  font-size: 25px;
+	  }
+	  .i-label-style{
+	  font-family: 'Dancing Script', cursive;
+	  font-size: 25px;
+	  }
+	  .h-new-style{
+	  font-family: 'Merienda', cursive;
+	  font-size: 40px 
+	  }
+	  .p-new-style{
+	  font-family: 'Dancing Script', cursive;
+	  font-size: 25px;
+	  }
+
+	  .sbt-new-style{
+	  font-family: 'Dancing Script', cursive;
+	  font-size: 25px;
+	  color: grey;
+
+	  }
+
+
+
+
+
+
+
+
+
 	  main{
 	  height: 100vh;
 	  }
+	 
 
 
