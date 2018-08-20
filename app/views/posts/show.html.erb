@@ -33,6 +33,22 @@
 					<% end %>
 				</div>
 
+				<p class="comment-paragh-style-1">Comments</p>
+				<div class="comment-show-style">
+				<% @post.comments.reverse.each do |comment| %>
+
+					<%= comment.content %>----<%= comment.user.email %>
+						<% if user_signed_in? %>
+						<% if current_user.id == @post.user_id %>
+							<br>
+							<%= link_to "delete", comments_delete_path(comment), method: :delete %>
+						<% end %>
+						<% end %>
+						<br>
+				<% end %>
+				</div>
+
+
 		
 		
 			</div>
