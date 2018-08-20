@@ -127,6 +127,7 @@
 	  }
 	  .comment-content{
 	  text-align: center;
+	  width: 41%;
 
 	  }
 	  .t-show-area-style
@@ -163,6 +164,17 @@
 	  font-size: 20px;
 	  text-align: center;
 
+	  }
+	  .card-image-style{
+	  width: 41%;
+	  }
+	  .card{
+	  background-color: lavender;
+	  }
+	  .card-img-cmt{
+	  display: flex;
+   	  justify-content: space-around;
+   	  padding-top: 18px;
 	  }
 
 

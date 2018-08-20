@@ -19,39 +19,66 @@
 		</div>
 
 		<br>
-			 <div class="container">
-			 	<p class="comment-paragh-style"> Create Comments </p>
-			 	<div class="comment-content">
-		
+
+			
+		<div class="container card-img-cmt">
+			<div class=" card-image-style">
+				<div class="card text-center">
+					<div class="card-body">
+
+						<% if user_signed_in? %>	
+							<%= form_for @image,html: { multipart: true }, remote:false do |f| %>
+								<div class= "card-title">
+					 				<%= f.label :image, class: "comment-paragh-style" %>
+					 			</div>
+									<%= f.file_field :avatar %>
+					 				<%= f.hidden_field :post_id, value: @post.id%>
+					 				<%= f.submit 'Submit', class: "btn btn-default sbt-new-style" %>
+					 				<% end %>
+				 		<% end %>
+	 				</div>
+	 			</div>
+	 		</div>
+	 	
+		 	<div class="comment-content">
+		 		<div class="card text-center">
+		 			<p class="comment-paragh-style"> Create Comments </p>
+
 					<%= form_for @comment do |f| %>
 
-						<%= f.label :content, class: 'c-label-style' %>
-						<%= f.text_field :content, class: 'form-control t-show-area-style' %>
+						<div class= "card-title">
+							<%= f.label :content, class: 'c-label-style' %>
+							<%= f.text_field :content, class: 'form-control t-show-area-style' %>
+						</div>
 
 						<%= f.hidden_field :post_id, value: @post.id %>
 						<%= f.submit "Create", class: "sbt-new-style" %>
 					<% end %>
 				</div>
+			</div>
+		</div>
 
+			<div class="container">
 				<p class="comment-paragh-style-1">Comments</p>
 				<div class="comment-show-style">
-				<% @post.comments.reverse.each do |comment| %>
+						<% @post.comments.reverse.each do |comment| %>
 
-					<%= comment.content %>----<%= comment.user.email %>
-						<% if user_signed_in? %>
-						<% if current_user.id == @post.user_id %>
-							<br>
-							<%= link_to "delete", comments_delete_path(comment), method: :delete %>
+							<%= comment.content %>----<%= comment.user.email %>
+								<% if user_signed_in? %>
+								<% if current_user.id == @post.user_id %>
+									<br>
+								<%= link_to "delete", comments_delete_path(comment), method: :delete %>
+								<% end %>
+								<% end %>
+								<br>
 						<% end %>
-						<% end %>
-						<br>
-				<% end %>
 				</div>
-
-
-		
-		
 			</div>
+
+
+
+
+	
 
 		
 

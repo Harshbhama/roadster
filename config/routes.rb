@@ -12,6 +12,8 @@ Rails.application.routes.draw do
 
   delete 'comments/:id', to: 'comments#destroy', as: :comments_delete
 
+  post 'image/create', to: 'images#create', as: :images
+
   root 'index#home'
 
 
