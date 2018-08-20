@@ -18,6 +18,27 @@
 
 		</div>
 
+		<br>
+			 <div class="container">
+			 	<p class="comment-paragh-style"> Create Comments </p>
+			 	<div class="comment-content">
+		
+					<%= form_for @comment do |f| %>
+
+						<%= f.label :content, class: 'c-label-style' %>
+						<%= f.text_field :content, class: 'form-control t-show-area-style' %>
+
+						<%= f.hidden_field :post_id, value: @post.id %>
+						<%= f.submit "Create", class: "sbt-new-style" %>
+					<% end %>
+				</div>
+
+		
+		
+			</div>
+
+		
+
 
 		<%= link_to 'Edit', edit_post_path(@post) %> |
 		<%= link_to 'Back', posts_path %>

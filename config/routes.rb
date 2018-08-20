@@ -8,6 +8,10 @@ Rails.application.routes.draw do
 
   get 'index/home', to: 'index#home'
 
+  post 'comment/create', to: 'comments#create', as: :comments
+
+  delete 'comments/:id', to: 'comments#destroy', as: :comments_delete
+
   root 'index#home'
 
 
