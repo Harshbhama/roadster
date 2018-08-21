@@ -20,13 +20,13 @@
 
 		<br>
 
-			
+	<% if user_signed_in? %>		
 		<div class="container card-img-cmt">
 			<div class=" card-image-style">
 				<div class="card text-center">
 					<div class="card-body">
 
-						<% if user_signed_in? %>	
+							
 							<%= form_for @image,html: { multipart: true }, remote:false do |f| %>
 								<div class= "card-title">
 					 				<%= f.label :image, class: "comment-paragh-style" %>
@@ -35,10 +35,45 @@
 					 				<%= f.hidden_field :post_id, value: @post.id%>
 					 				<%= f.submit 'Submit', class: "btn btn-default sbt-new-style" %>
 					 				<% end %>
-				 		<% end %>
+				 		
 	 				</div>
 	 			</div>
 	 		</div>
+
+	 	
+		 	<div class="comment-content">
+		 		<div class="card text-center">
+		 			<p class="comment-paragh-style"> Create Comments </p>
+
+					<%= form_for @comment do |f| %>
+
+						<div class= "card-title">
+							<%= f.label :content, class: 'c-label-style' %>
+							<%= f.text_field :content, class: 'form-control t-show-area-style' %>
+						</div>
+
+						<%= f.hidden_field :post_id, value: @post.id %>
+						<%= f.submit "Create", class: "sbt-new-style" %>
+					<% end %>
+				</div>
+			</div>
+		</div>
+	<% else %>
+
+		<div class="container card-img-cmt">
+			<div class=" card-image-style">
+				<div class="card text-center">
+					<div class="card-body">
+								<div class= "card-title comment-paragh-style">
+					 				<p>Upload Image</p>
+					 			</div>
+									<p class="card-text c-label-style">In order to upload images you need to create your own post 
+									and upload images on it</p>
+				 		
+	 				</div>
+	 			</div>
+	 		</div>
+
 	 	
 		 	<div class="comment-content">
 		 		<div class="card text-center">
@@ -58,16 +93,32 @@
 			</div>
 		</div>
 
+	<% end %>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
 				<div class="container img-show-cont">
 					<div class="post-content">
 						<div class="row">
             				<div class="col-lg-12 "><h1 class="h-post-style">Images</h1></div>
           				</div>
 						
-						<div class="grid-show-image">
+						<div >
 							<div class="row">
 								<% @post.images.each do |img| %>
-			  						<div class="col-lg-4"><%= image_tag img.avatar.url, class: "image-style"%></div>
+			  						<div class="col-lg-4 col-md-6 col-sm-6"><%= image_tag img.avatar.url, class: "image-style-show"%></div>
+
 			  					<% end %>
 			  				</div>
 			  			</div>
