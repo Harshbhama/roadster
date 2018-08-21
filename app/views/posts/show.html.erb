@@ -58,6 +58,26 @@
 			</div>
 		</div>
 
+				<div class="container img-show-cont">
+					<div class="post-content">
+						<div class="row">
+            				<div class="col-lg-12 "><h1 class="h-post-style">Images</h1></div>
+          				</div>
+						
+						<div class="grid-show-image">
+							<div class="row">
+								<% @post.images.each do |img| %>
+			  						<div class="col-lg-4"><%= image_tag img.avatar.url, class: "image-style"%></div>
+			  					<% end %>
+			  				</div>
+			  			</div>
+		  			</div>
+		  		</div>
+
+
+
+						
+
 			<div class="container">
 				<p class="comment-paragh-style-1">Comments</p>
 				<div class="comment-show-style">
