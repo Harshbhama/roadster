@@ -1,6 +1,31 @@
-<h1>Editing Post</h1>
+<html>
 
-<%= render 'form', post: @post %>
+	<body id="new-body">
 
-<%= link_to 'Show', @post %> |
-<%= link_to 'Back', posts_path %>
+		<div class="container">
+
+			<h1 class="h-new-style">New Post</h1>
+
+		<%=form_for @post, html: { multipart: true } do |f| %>
+			
+			<div class="form-group">
+			 	<%= f.label :title, class: "t-label-style"  %>
+				<%= f.text_area :title, class: "form-control t-area-style" %>
+				<br>
+				<%= f.label :content, class: "c-label-style"%>
+				<%= f.text_area :content, class: "form-control c-area-style" %>
+			 	<br>
+			 	<%= f.submit 'Submit', class: "btn btn-default sbt-new-style" %>
+			 	
+				<% end %>
+			</div>
+
+					
+				<%= link_to 'Show', @post, class: "badge badge-success" %> |
+				<%= link_to 'Back', posts_path, class: "badge badge-info" %>
+		</div>
+	</body>
+
+</html>
+
+
