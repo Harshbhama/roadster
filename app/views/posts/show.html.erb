@@ -106,7 +106,10 @@
 
 
 
+			<% u = Post.find(params[:id]) %>
+			<% m = u.images.count %>
 
+			<% c = u.comments.count %>
 
 				<div class="container img-show-cont">
 					<div class="post-content">
@@ -114,14 +117,19 @@
             				<div class="col-lg-12 "><h1 class="h-post-style">Images</h1></div>
           				</div>
 						
-						<div >
-							<div class="row">
-								<% @post.images.each do |img| %>
-			  						<div class="col-lg-4 col-md-6 col-sm-6"><%= image_tag img.avatar.url, class: "image-style-show"%></div>
+						<% if m==0 %>
+							<div class="alert alert-primary" role="alert">
+				 			 	<p>No images added</p>
+							</div>
+						<% end %>
+							<div>	
+								<div class="row">
+									<% @post.images.each do |img| %>
+				  						<div class="col-lg-4 col-md-6 col-sm-6"><%= image_tag img.avatar.url, class: "image-style-show"%></div>
 
-			  					<% end %>
-			  				</div>
-			  			</div>
+				  					<% end %>
+				  				</div>
+				  			</div>
 		  			</div>
 		  		</div>
 
@@ -131,12 +139,20 @@
 
 			<div class="container">
 				<p class="comment-paragh-style-1">Comments</p>
+				<% if c==0 %>
+						<div class="alt-comment">
+							<div class="alert alert-primary" role="alert">
+								
+				 			 		<p>No Comments added</p>
+				 			 </div>
+						</div>
+				<% end %>
 				<div class="comment-show-style">
 						<% @post.comments.reverse.each do |comment| %>
 
 							<%= comment.content %>----<%= comment.user.email %>
 								<% if user_signed_in? %>
-								<% if current_user.id == @post.user_id %>
+								<% if current_user.id == @post.user_id || current_user.id == comment.user_id %>
 									<br>
 								<%= link_to "delete", comments_delete_path(comment), method: :delete %>
 								<% end %>
