@@ -3,6 +3,25 @@
  	html{
  	height: 100%;
  	}
+ 	@media (min-width: 340px) and (max-width: 480px)and (orientation: portrait) {
+		.small-screen-style{
+		
+			#size-road{
+			font-weigth: 500;
+			font-size: 3em;
+			}
+			h3{
+			font-size: 1.5em;
+			}
+			#content{
+			    padding-top: 54%;
+			}
+			
+		}
+ 		html{
+ 	height: 100%;
+ 	}
+	}
 
 #home-body{
 	
