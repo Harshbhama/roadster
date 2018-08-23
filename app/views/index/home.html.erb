@@ -12,14 +12,14 @@
   <!-- Adding jumbotron here -->
 
 	<div class="container"> 
-		<% if notice == true %>
-			<div class="alert alert-primary" role="alert">
+		<% if (notice) %>
+			<div class="alert alert-primary alt" role="alert">
 	 			 <p id="notice home-notice"><%= notice %></p>
 			</div>
 		<% end %>
 		  	
 	    	<div class="row">
-	    		<div class="col-lg-12 ">
+	    		<div class="col-lg-12 col-md-12">
 			      <div class="jumbotron jumb-image">
 			      	<div id = "content">
 			        

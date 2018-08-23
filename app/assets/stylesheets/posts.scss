@@ -2,7 +2,7 @@
 
   
   		header{
-  			height:100vh;
+  			height:100%;
   			background: url("https://images.unsplash.com/photo-1534543422-0169c08bf67c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=52f67c480f3f78dbd94e186857a60b1a&auto=format&fit=crop&w=700&q=80");
   			background-size: cover;
 			background-position: center;
@@ -61,10 +61,17 @@
 	  .show-link{
 
 	  	text-align: center;
+	  	padding-bottom: 10px;
 	  }
-	  .paragh-style{
+	  .paragh-style-1{
 	  	text-align: center;
 	    padding-top: 10px;
+	    font-family: 'Kaushan Script', cursive;
+	  }
+	  .paragh-style-2{
+	  	text-align: center;
+	    padding-top: 2px;
+	    font-family: 'Kalam', cursive;
 	  }
 	  .post-heading-style{
 	  padding-left: 41%;
@@ -165,6 +172,9 @@
 	  text-align: center;
 
 	  }
+	  .grid-padding-style{
+	  padding-top: 25px;
+	  }
 	  .card-image-style{
 	  width: 41%;
 	  }
@@ -198,6 +208,8 @@
 	   .alt-comment{
 	       padding-left: 43%;	
 	   }
+
+
 
 
 

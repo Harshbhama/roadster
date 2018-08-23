@@ -168,9 +168,11 @@
 	
 
 		
-
-
-		<%= link_to 'Edit', edit_post_path(@post), class: "badge badge-success" %> |
+		<% if user_signed_in? %>
+		<% if current_user.id == @post.user_id %>
+			<%= link_to 'Edit', edit_post_path(@post), class: "badge badge-success" %> |
+		<% end %>
+		<% end %>
 		<%= link_to 'Back', posts_path, class: "badge badge-info" %>
 	</body>
 </html>

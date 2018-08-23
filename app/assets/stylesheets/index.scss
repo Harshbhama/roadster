@@ -1,8 +1,8 @@
  @import "bootstrap";
 
- html{
- height: 100%;
- }
+ 	html{
+ 	height: 100%;
+ 	}
 
 #home-body{
 	
@@ -65,7 +65,9 @@
     font-size: 21px;
     color: grey;
 	}
-	
+	.alt{
+	width: 100% !important;
+	}
 	
 
 

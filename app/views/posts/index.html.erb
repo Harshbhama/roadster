@@ -1,6 +1,8 @@
 
 <html>
 
+
+
 <body id="post-background">
   
 
@@ -54,9 +56,10 @@
           <div class="row">
             <% @posts.each do |post| %>
                 
-              <div>
-                <p class="paragh-style"><%=post.title %><p>
-                <div class="col-lg-4 "><%= image_tag post.avatar.url, class: "image-style"%></div>
+              <div class="grid-padding-style ">
+                <p class="paragh-style-1"><%=post.title %><p>
+                  <p class="paragh-style-2">By -- <%= post.user.email %> </p>
+                <div class="col-lg-4"><%= image_tag post.avatar.url, class: "image-style"%></div>
                 
 
                 <br>
