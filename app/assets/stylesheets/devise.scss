@@ -1,5 +1,35 @@
 @import "bootstrap";
 
+
+
+
+	@media (min-width: 340px) and (max-width: 1000px)and (orientation: portrait) {
+		
+		
+			.login-size{
+					padding-top: 20%;
+
+					.container{
+						width: 78% !important;
+						
+						.field .t-area-style {
+   							 width: 63%;
+   							 }
+   							 .login-content{
+   							 padding-left: 33%;
+   							 }
+					}
+			}
+			
+		
+	}
+
+	.login-size{
+		.container{
+		width: 50%;
+		}
+	}
+
 	.h-new-style{
 		  font-family: 'Merienda', cursive;
 		  font-size: 40px ;
@@ -9,10 +39,12 @@
 	  font-family: 'Dancing Script', cursive ;
 	  font-size: 25px;
 	  }
+	  .field{
 	  .t-area-style
 	  {
-	      width: 36%;
+	      width: 46%;
 
+	  }
 	  }
 	  .sbt-new-style{
 	  font-family: 'Dancing Script', cursive;
@@ -21,7 +53,18 @@
 
 	  }
 	  .login-content{
-	    padding-left: 40%;
+	    padding-left: 38%;
+
+	    opacity: 0.85;
+		padding-bottom: 46px;
+	    margin-top: 20px;
+	    border-radius: 10px;
+	    background: white;
+	   .badge-dark{
+	   margin-top: 8px;
+	   margin-bottom: 6px;
+	   }
+
 	  }
 	  .devise-link{
 	    height: 20px;
@@ -42,6 +85,12 @@
 	  font-family: 'Dancing Script', cursive ;
 	  font-size: 20px;
 	  }
+	  .login-content{
+		.badge-info {
+	    width: 35%;
+	    }
+	    }
+
 
 
 
@@ -60,7 +109,7 @@
 
 	  #login-body{
 
-	  background: url("https://images.unsplash.com/photo-1522827144599-b1f5b28b2f52?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=77cc652eedf57683d69e6acb1fd16b56&auto=format&fit=crop&w=888&q=80");
+	  background: url("https://hdwallsource.com/img/2014/9/blur-26347-27038-hd-wallpapers.jpg");
 	  background-size: cover;
 	  background-position: center;
 	  height: 100%;
