@@ -7,6 +7,8 @@ ruby '2.5.1'
 
 gem "paperclip", "~> 6.0.0"
 
+gem 'will_paginate', '~> 3.1.0'
+
 gem 'rails', '~> 5.2.1'
 
 gem 'devise'
