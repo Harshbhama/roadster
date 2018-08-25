@@ -11,6 +11,36 @@
   		}
 
 
+
+
+
+  	@media (min-width: 340px) and (max-width: 750px)and (orientation: portrait) {
+
+  		.small-index-style{
+  		.container{
+  			max-width: 700px;
+  			.image-style{
+  			width: 290px;
+  			}
+  			.image-style-show{
+  			width: 290px;
+  			}
+  		}
+
+  		}
+		
+		
+
+
+		.grid-padding-style{
+
+	  	
+	  	}
+			
+		
+	}
+
+
 	  .content{
 
 	  color: white;
@@ -208,6 +238,10 @@
 	   .alt-comment{
 	       padding-left: 43%;	
 	   }
+
+
+
+	   
 
 
 

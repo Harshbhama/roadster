@@ -18,6 +18,12 @@
    							 .login-content{
    							 padding-left: 33%;
    							 }
+   							 .login-content-regist{
+   							 padding-left: 23%;
+   							 }
+   							 .login-content-regist-frgt{
+   							 padding-left: 18%;
+   							 }
 					}
 			}
 			
@@ -90,6 +96,53 @@
 	    width: 35%;
 	    }
 	    }
+	   
+	   .login-content-regist{
+   		padding-left: 29%;
+
+	    opacity: 0.85;
+		padding-bottom: 46px;
+	    margin-top: 20px;
+	    border-radius: 10px;
+	    background: white;
+	   .badge-dark{
+	   margin-top: 8px;
+	   margin-bottom: 6px;
+	   }
+	   .badge-info {
+	    width: 35%;
+	    }
+   		}
+
+
+
+   		.login-content-regist-frgt{
+   		padding-left: 23%;
+
+	    opacity: 0.85;
+		padding-bottom: 46px;
+	    margin-top: 20px;
+	    border-radius: 10px;
+	    background: white;
+	   .badge-dark{
+	   margin-top: 8px;
+	   margin-bottom: 6px;
+	   }
+	   .badge-info {
+	    width: 35%;
+	    }
+
+
+   		}
+   		.alt{
+		width: 100% !important;
+		}
+		.home-notice{
+	
+	    font-size: 21px;
+	    color: grey;
+		}
+
 
 
 

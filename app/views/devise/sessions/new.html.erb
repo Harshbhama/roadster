@@ -2,6 +2,11 @@
   <body id="login-body">
     <div class="login-size">
       <div class="container ">
+          <% if (notice) %>
+            <div class="alert alert-primary alt" role="alert">
+               <p id="notice home-notice"><%= notice %></p>
+            </div>
+          <% end %>
 
         <div class="login-content">
             <h2 class="h-new-style">Log in</h2>
