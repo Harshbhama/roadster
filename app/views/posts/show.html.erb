@@ -148,20 +148,71 @@
 				 			 </div>
 						</div>
 				<% end %>
-				<div class="comment-show-style">
-						<% @post.comments.reverse.each do |comment| %>
 
-							<%= comment.content %>----<%= comment.user.email %>
-								<% if user_signed_in? %>
-								<% if current_user.id == @post.user_id || current_user.id == comment.user_id %>
-									<br>
-								<%= link_to "delete", comments_delete_path(comment), method: :delete %>
-								<% end %>
-								<% end %>
-								<br>
-						<% end %>
-				</div>
+				<% @post.comments.reverse.each do |comment| %>
+	
+						<div class="container bootstrap snippet">
+						    <div class="row">
+								<div class="col-md-12">
+								    <div class="blog-comment"> 
+										<ul class="comments">
+										<li class="clearfix">
+										  <div class="post-comments">
+										      <p class="meta comment-paragh-style-2 "><%= comment.user.email %> says : </p>
+										      <p class="show-content-style">
+										          <%= comment.content %>
+										      </p>
+										  </div>
+										</li>
+										
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+				<% end %>
+				
+
+
+
+
 			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
