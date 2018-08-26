@@ -56,11 +56,11 @@
         
               <div class="row">
                 <% @posts.each do |post| %>
-                    
+                
                   <div class="grid-padding-style ">
                     <p class="paragh-style-1"><%=post.title %><p>
                       <p class="paragh-style-2">By -- <%= post.user.email %> </p>
-                    <div class="col-lg-4 col-sm-6 col-xs-6 col-md-6"><%= image_tag post.avatar.url, class: "image-style"%></div>
+                    <div class="col-lg-4 col-sm-6 col-xs-6 col-md-6"><%= image_tag post.avatar.url, class: "image-style wow fadeIn "%></div>
                     
 
                     <br>
@@ -76,6 +76,7 @@
                     <% end %>
                     </div>
                   </div>
+               
                   
                   
                     
