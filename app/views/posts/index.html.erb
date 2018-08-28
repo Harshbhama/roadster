@@ -65,6 +65,12 @@
 
                     <br>
                     <div class="show-link">
+                      <%= post.likes.length %>
+                      <% if user_signed_in? %>
+                      
+                      <%= link_to post.user_like_string(current_user.id), toggle_like_path(post), method: :post %>
+                      <% end %>
+
                     <button type="button" class="btn btn-dark "><%= link_to 'Show', post, class: 'edit-link'  %></button>
                     <% if user_signed_in? %>
                     <% if current_user.id == post.user_id %>

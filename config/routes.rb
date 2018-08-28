@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'likes/toggle'
   devise_for :users
   resources :posts
 
@@ -15,6 +16,8 @@ Rails.application.routes.draw do
   post 'image/create', to: 'images#create', as: :images
 
   root 'index#home'
+
+  post 'likes/toggle/:post_id', to: 'likes#toggle', as: :toggle_like
 
 
   
