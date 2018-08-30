@@ -27,10 +27,10 @@ class Post < ApplicationRecord
 
  		if self.user_can_like(user_id)
 
- 			return '<i class="fas fa-thumbs-up"> Like </i>'.html_safe
+ 			return '<i class="fas fa-thumbs-up"> </i> Like '.html_safe
 
  		else
- 			return '<i class="fas fa-thumbs-up"> Like </i>'.html_safe
+ 			return '<i class="fas fa-thumbs-up"></i> Like'.html_safe
 
  		end
 

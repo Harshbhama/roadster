@@ -22,23 +22,47 @@
   			.image-style{
   			width: 290px;
   			}
+
   			.image-style-show{
   			width: 290px;
   			}
   		}
 
   		}
-		
-		
+  		.sbt-new-style-i{
+			  font-family: 'Dancing Script', cursive;
+			  font-size: 25px;
+			  color: grey;
+			  margin-top: 16px;
 
-
-		.grid-padding-style{
-
-	  	
-	  	}
-			
+			  }
+			  .sml-content-style{
+			  .show-content-style{
+				  font-family: 'Dancing Script', cursive;
+				  font-size: 25px;
+				  text-align: center;
+				  }
+				  }
+  			
 		
 	}
+		@media (min-width: 340px) and (max-width: 1000px)and (orientation: portrait) {
+		.sml-content-style{
+			  .show-content-style{
+				  font-family: 'Dancing Script', cursive;
+				  font-size: 25px;
+				  text-align: center;
+				  }
+				  }
+		.sbt-new-style-i{
+		  font-family: 'Dancing Script', cursive;
+		  font-size: 25px;
+		  color: grey;
+		  margin-top: 16px;
+
+		  }
+
+		}
 
 
 	  .content{
@@ -90,6 +114,8 @@
 	  }
 	  .show-link{
 
+	  	display: flex;
+	  	justify-content: space-around;
 	  	text-align: center;
 	  	padding-bottom: 10px;
 	  }
@@ -111,6 +137,10 @@
 	  }
 	  .edit-link{
 	  color: grey;
+	  }
+	  .edit-link-show{
+	  color: grey;
+	  margin-right: 32%;
 	  }
 	  .t-area-style
 	  {
@@ -152,12 +182,23 @@
 	  color: grey;
 
 	  }
+	  .sbt-new-style-i{
+	  font-family: 'Dancing Script', cursive;
+	  font-size: 25px;
+	  color: grey;
+
+	  }
 	  .show-title-style{
 	  font-family: 'Dancing Script', cursive;
 	  font-size: 40px;
 	  text-align: center;
 	  }
 	  .show-content-style{
+	  font-family: 'Dancing Script', cursive;
+	  font-size: 20px;
+	  text-align: center;
+	  }
+	   .show-content-style-p{
 	  font-family: 'Dancing Script', cursive;
 	  font-size: 20px;
 	  text-align: center;
@@ -355,6 +396,28 @@
 	line-height: 30px;
 	font-weight: 800;
 }
+.length-style{
+	color: blue;
+}
+
+.color-button{
+	    background-color: lightskyblue;
+}
+.color-button:hover{
+	    background-color: lightskyblue;
+}
+.add-links-style{
+	text-align: center;
+}
+.bdg-size{
+	font-size: 14px;
+}
+.cmt-delete{
+	text-align: right;
+	font-family: fantasy;
+}
+
+
 
 
 
