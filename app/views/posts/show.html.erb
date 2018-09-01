@@ -32,7 +32,7 @@
 								<div class= "card-title">
 					 				<%= f.label :image, class: "comment-paragh-style" %>
 					 			</div>
-									<%= f.file_field :avatar %>
+									<%= f.file_field :avatar, required: true %>
 					 				<%= f.hidden_field :post_id, value: @post.id%>
 					 				<%= f.submit 'Submit', class: "btn btn-default sbt-new-style-i " %>
 					 				<% end %>
@@ -50,7 +50,7 @@
 
 						<div class= "card-title">
 							<%= f.label :content, class: 'c-label-style' %>
-							<%= f.text_field :content, class: 'form-control t-show-area-style' %>
+							<%= f.text_field :content, class: 'form-control t-show-area-style', required: true %>
 						</div>
 
 						<%= f.hidden_field :post_id, value: @post.id %>

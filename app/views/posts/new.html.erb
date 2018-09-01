@@ -11,14 +11,14 @@
 			
 			<div class="form-group">
 			 	<%= f.label :title, class: "t-label-style"  %>
-				<%= f.text_area :title, class: "form-control t-area-style" %>
+				<%= f.text_area :title, class: "form-control t-area-style", required: true %>
 				<br>
 				<%= f.label :content, class: "c-label-style"%>
-				<%= f.text_area :content, class: "form-control c-area-style" %>
+				<%= f.text_area :content, class: "form-control c-area-style", required: true %>
 			 	<br>
 			 	
 			 	<p class="p-new-style">Choose Cover Image</p>
-				<%= f.file_field :avatar, class: "form-control i-area-style", placeholder: "Enter email" %>
+				<%= f.file_field :avatar, class: "form-control i-area-style", placeholder: "Enter email", required: true %>
 				<br>
 				
 			 	<%= f.submit 'Submit', class: "btn btn-default sbt-new-style" %>
