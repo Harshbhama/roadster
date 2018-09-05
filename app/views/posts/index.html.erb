@@ -71,11 +71,11 @@
                           </div>
                       <% else %>
 
-                        <button class='btn btn-outline-info btn-sm' data-container="body" data-trigger="focus" data-toggle="popover" data-placement="bottom" data-content="Please sign-in to Like"><i class="fas fa-thumbs-up"></i> Likes <%= post.likes.length %></button>
+                        <button class='btn btn-outline-info btn-sm out' data-container="body" data-trigger="focus" data-toggle="popover" data-placement="bottom" data-content="Please sign-in to Like"><i class="fas fa-thumbs-up"></i> Likes <%= post.likes.length %></button>
 
                       <% end %>
 
-                    <button type="button" class="btn btn-dark edit-link-show "><%= link_to 'Show', post, class: 'edit-link'  %></button>
+                  <%= link_to 'Show', post, class: 'edit-link btn btn-dark edit-link-show out'  %>
                     <% if user_signed_in? %>
                     <% if current_user.id == post.user_id %>
                     

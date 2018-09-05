@@ -1,11 +1,13 @@
 <span>
 	<% if post.user_can_like(current_user.id) %>
-			<button class='btn btn-outline-info btn-sm  '><%= link_to post.user_like_string(current_user.id), toggle_like_path(post), method: :post,remote: true %> <%= post.likes.length %></button>
+			<%= link_to post.user_like_string(current_user.id), toggle_like_path(post), method: :post,remote: true, class: "btn btn-outline-info btn-sm out" %> <%= post.likes.length %>
 	 <% else %>
-            <button class='btn btn-success btn-sm color-button'><%= link_to post.user_like_string(current_user.id), toggle_like_path(post), method: :post,remote: true %> <%= post.likes.length %></button>
+            <%= link_to post.user_like_string(current_user.id), toggle_like_path(post), method: :post,remote: true, class: "btn btn-success btn-sm color-button out" %> <%= post.likes.length %>
 
           <% end %> 
 
 </span>
+
+
 
 

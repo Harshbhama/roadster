@@ -401,10 +401,10 @@
 }
 
 .color-button{
-	    background-color: lightskyblue;
+	    background-color: #17a2b8;
 }
 .color-button:hover{
-	    background-color: lightskyblue;
+	    background-color: #17a2b8;
 }
 .add-links-style{
 	text-align: center;
@@ -419,7 +419,12 @@
 
 
 
+.out{
 
+	outline: 0 !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
 
 
 
