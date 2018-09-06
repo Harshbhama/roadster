@@ -107,6 +107,7 @@
 	    height: 250px;
 	    border-radius: 19px;
 	   }
+	   
 
 	  .disp-style{
 	    display: flex;
@@ -118,6 +119,9 @@
 	  	justify-content: space-around;
 	  	text-align: center;
 	  	padding-bottom: 10px;
+	  	a{
+	  	    height: 30px;
+	  	}
 	  }
 	  .paragh-style-1{
 	  	text-align: center;
@@ -303,7 +307,7 @@
 	   }.pagination{
 	   display: inline-block;
 	   }
-
+	   
 
 
 
@@ -425,6 +429,11 @@
     border: 0 !important;
     box-shadow: none !important;
 }
+.like-font{
+	
+	    color: cadetblue;
+}
+
 
 
 

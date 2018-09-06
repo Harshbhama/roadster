@@ -26,7 +26,7 @@
           <% if user_signed_in? %>
          <button class="btn btn-default"> <%= link_to 'Create Your Journey', new_post_path, class: "post-link-style" %></button>
           <% else %>
-          <button class="btn btn-default"> <%= link_to "Sign in to create post", new_user_session_path, class: "post-link-style"%></button>
+          <button class="btn btn-default"> <%= link_to "Sign in to create Journey", new_user_session_path, class: "post-link-style"%></button>
           <% end %> 
         </div>
 
@@ -60,7 +60,7 @@
                   <div class="grid-padding-style ">
                     <p class="paragh-style-1"><%=post.title %><p>
                       <p class="paragh-style-2">By -- <%= post.user.email %> </p>
-                    <div id="test" class="col-lg-4 col-sm-6 col-xs-6 col-md-6"><%= image_tag post.avatar.url, class: "image-style wow fadeIn  "%></div>
+                        <div id="test" class="col-lg-4 col-sm-6 col-xs-6 col-md-6"><%= image_tag post.avatar.url, class: "image-style wow fadeIn"%></div>
 
                     <br>
                     <div class="show-link">
@@ -71,16 +71,13 @@
                           </div>
                       <% else %>
 
-                        <button class='btn btn-outline-info btn-sm out' data-container="body" data-trigger="focus" data-toggle="popover" data-placement="bottom" data-content="Please sign-in to Like"><i class="fas fa-thumbs-up"></i> Likes <%= post.likes.length %></button>
+                        <a href = "users/sign_in"<button class='btn btn-outline-info btn-sm out'><i class="fas fa-thumbs-up"></i> Likes <%= post.likes.length %></button></a>
 
                       <% end %>
 
                   <%= link_to 'Show', post, class: 'edit-link btn btn-dark edit-link-show out'  %>
                     <% if user_signed_in? %>
                     <% if current_user.id == post.user_id %>
-                    
-                    
-               
                     <% end %>
                     <% end %>
                     </div>
