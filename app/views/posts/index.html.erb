@@ -70,8 +70,9 @@
                             <%= render 'post_like_link', post: post %>
                           </div>
                       <% else %>
-
+                      <div class="like-a">
                         <a href = "users/sign_in"<button class='btn btn-outline-info btn-sm out'><i class="fas fa-thumbs-up"></i> Likes <%= post.likes.length %></button></a>
+                      </div>
 
                       <% end %>
 
