@@ -116,8 +116,8 @@ Rails.application.configure do
   storage: :s3,
   s3_credentials: {
     bucket: ENV.fetch('roadster'),
-    access_key_id: ENV.fetch('AKIAIABDSQ7HDYPMKQPA'),
-    secret_access_key: ENV.fetch('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'),
+    access_key_id: ENV.fetch('AKIAIF43JEP47PAMDRSA'),
+    secret_access_key: ENV.fetch('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'),
     s3_region: ENV.fetch('us-east-2'),
   }
 }
