@@ -111,4 +111,16 @@ Rails.application.configure do
   }
 
 
+
+  config.paperclip_defaults = {
+  storage: :s3,
+  s3_credentials: {
+    bucket: ENV.fetch('roadster'),
+    access_key_id: ENV.fetch('AKIAIABDSQ7HDYPMKQPA'),
+    secret_access_key: ENV.fetch('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'),
+    s3_region: ENV.fetch('us-east-2'),
+  }
+}
+
+
 end
