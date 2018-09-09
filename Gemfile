@@ -13,6 +13,8 @@ gem 'rails', '~> 5.2.1'
 
 gem 'devise'
 
+gem 'figaro'
+
 gem 'bootstrap', '~> 4.1.3'
 
 gem 'autoprefixer-rails', '8.6.5'
@@ -89,4 +91,6 @@ end
   gem 'rails_12factor'
 
   gem 'aws-sdk', '~> 2.3'
+
+  gem 'figaro'
  end
